@@ -29,7 +29,7 @@ func CreateTable() {
     CREATE TABLE IF NOT EXISTS todos (
         id SERIAL PRIMARY KEY,
         title TEXT,
-        done BOOLEAN
+        status TEXT
     );
     `
 	_, err := DB.Exec(createTb)
